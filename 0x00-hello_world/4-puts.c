@@ -1,7 +1,7 @@
 #include <stdio.sh>
 
 /**
- * main - Starting point
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
