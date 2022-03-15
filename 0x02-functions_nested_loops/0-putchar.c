@@ -11,6 +11,11 @@ int main(void)
 	_putchar('S');
 	_putchar('S');
 	_putchar('A');
+	_putchar('S');
+	_putchar('U');
+	_putchar('L');
+	_putchar('E');
+	_putchar('I');
 	_putchar('\n');
 
 	return (0);
