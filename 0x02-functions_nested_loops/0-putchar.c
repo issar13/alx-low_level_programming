@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - Entry point
- * Description: prints 'Holberton \n'
+ * Description: prints '_putchar'
  * Return: Always 0 (success)
  */
 int main(void)
