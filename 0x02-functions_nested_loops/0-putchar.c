@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
 * main - prints a string
 * Description: the string is "Issa"
