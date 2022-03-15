@@ -7,15 +7,14 @@
 */
 int main(void)
 {
-	_putchar('I');
-	_putchar('S');
-	_putchar('S');
-	_putchar('A');
-	_putchar('S');
-	_putchar('U');
-	_putchar('L');
-	_putchar('E');
-	_putchar('I');
+	char issasulei[] = "Issasulei";
+	int i = 0;
+
+	while (issasulei[i] != '\0')
+	{
+		_putchar(issasulei[i]);
+		i++;
+	}
 	_putchar('\n');
 
 	return (0);
