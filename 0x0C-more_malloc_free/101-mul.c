@@ -1,44 +1,25 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * string_nconcat - Concatenates two strings using at
- *                  most an inputted number of bytes.
- * @s1: The first string.
- * @s2: The second string.
- * @n: The maximum number of bytes of s2 to concatenate to s1.
- *
- * Return: If the function fails - NULL.
- *         Otherwise - a pointer to the concatenated space in memory.
+ * main - prints all arguments received.
+ * @argc: type int argument
+ * @argv: type char argument of string.
+ * Return: if not receive 2 arg, rt error
  */
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+int main(int argc, char *argv[])
 {
-	char *concat;
-	unsigned int len = n, index;
+	int n1, n2, mul;
 
-	if (s1 == NULL)
-		s1 = "";
-
-	if (s2 == NULL)
-		s2 = "";
-
-	for (index = 0; s1[index]; index++)
-		len++;
-
-	concat = malloc(sizeof(char) * (len + 1));
-
-	if (concat == NULL)
-		return (NULL);
-
-	len = 0;
-
-	for (index = 0; s1[index]; index++)
-		concat[len++] = s1[index];
-
-	for (index = 0; s2[index] && index < n; index++)
-		concat[len++] = s2[index];
-
-	concat[len] = '\0';
-
-	return (concat);
+	if (argc != 3)
+		printf("Error\n");
+	else
+	{
+		n1 = atoi(argv[1]);
+		n2 = atoi(argv[2]);
+		mul = n1 * n2;
+		printf("%d\n", mul);
+	}
+	return (0);
 }
