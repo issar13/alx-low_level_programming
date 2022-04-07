@@ -1,12 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/**
- * Auth: Issa Suleiman
- * Desc: Header file containing prototypes for all functions
- *       used in the 0x0B-more_malloc_free directory.
- */
-
 #include <stdlib.h>
 
 void *malloc_checked(unsigned int b);
