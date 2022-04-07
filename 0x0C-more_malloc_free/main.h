@@ -7,7 +7,6 @@
  *       used in the 0x0B-more_malloc_free directory.
  */
 
-#include <stdio.h>
 #include <stdlib.h>
 
 int _putchar(char c);
@@ -16,8 +15,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 void *_calloc(unsigned int nmemb, unsigned int size);
 int *array_range(int min, int max);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
-void errors(void);
-int _strlen(char *s);
-int is_digit(char *s);
+void _puts(char *str);
+int _putchar(char c);
+int _atoi(const char *s);
+void print_int(unsigned long int n);
 
 #endif
